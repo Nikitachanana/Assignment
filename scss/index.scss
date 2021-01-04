@@ -1,0 +1,62 @@
+body{
+    background-image: radial-gradient(rgba(156, 193, 250, 0.575), rgba(240, 240, 97, 0.671));
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.todos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    align-items: center;
+    width: 50%;
+    // background-color: pink;
+    .todo{
+        text-transform: capitalize;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: .5rem 0;
+        padding: 1rem;
+        width: 100%;
+    }
+   
+    .complete{
+        border: 2px solid rgba(23, 199, 7, 0.863);
+        border-radius: .5rem;
+    }
+    .incomplete{
+        border: 2px solid rgba(255, 0, 0, 0.747);
+        border-radius: .5rem;
+    }
+    .complete:hover{
+        box-shadow: 0 0 .2rem .2rem rgba(23, 199, 7, 0.753);
+    }
+    .incomplete:hover{
+        box-shadow: 0 0 .2rem .2rem rgba(199, 7, 7, 0.76);
+    }
+}
+.pagination{
+    // border: 1px solid black;
+    padding: 1rem;
+    align-self: center;
+    width: 93%;
+    .pages{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem 1rem;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .pages:hover{
+        color: rgb(85, 85, 85);
+        cursor: pointer;
+    }
+}
